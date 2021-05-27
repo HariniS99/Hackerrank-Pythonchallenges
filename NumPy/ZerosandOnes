@@ -47,3 +47,13 @@ import numpy as np
 n,m,p=map(int,input().split())
 print(np.zeros((n,m,p),dtype=np.int)) #default datatype will be float so mentioning the dtype as 'int'
 print(np.ones((n,m,p),dtype=np.int))
+--- not suited for 1D or 2D arrays
+
+corrected code:
+
+import numpy as np
+#n,m,p=map(int,input().split())
+nos=tuple(map(int,input().split()))
+print(np.zeros(nos,dtype=np.int))
+print(np.ones(nos,dtype=np.int))
+
