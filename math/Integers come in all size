@@ -1,0 +1,30 @@
+Task
+Read four numbers, a, b, c, and d, and print the result of a^b+c^d.
+
+Input Format
+Integers a, b, c, and d are given on four separate lines, respectively.
+
+Print the result of a^b+c^d on one line.
+Sample Input
+
+9
+29
+7
+27
+Sample Output
+
+4710194409608608369201743232
+
+Programcode:
+
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+if(a>=1 or a<=1000):
+    if(b>=1 or b<=1000):
+        if(c>=1 or c<=1000):
+            if(d>=1 or d<=1000):
+                ab=pow(a,b)
+                cd=pow(c,d)
+                print(ab+cd)
